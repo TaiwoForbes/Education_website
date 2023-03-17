@@ -12,8 +12,14 @@
 
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;1,100;1,600&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;1,100;1,600&family=Roboto&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Swiper Js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
 
     <style>
@@ -156,18 +162,18 @@
                 </div>
             </article>
 
-            
+
         </div>
 
     </section>
 
     <!-- =========== END OF FAQS -->
 
-    <section class="container testinomials__container">
+    <section class="container testinomials__container mySwiper">
         <h2>Student's Testimonial</h2>
-        <div>
+        <div class="swiper-wrapper">
             
-            <article class="testimonial">
+            <article class="testimonial swiper-slide">
                 <div class="avatar">
                     <img src="./assets/images/avatar1.jpg" alt="">
                 </div>
@@ -177,11 +183,100 @@
                 </div>
                 <div class="testimonial__body">
                     <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis repudiandae odit ipsam soluta nam consequuntur! Nemo molestias laborum expedita dicta dolorem, suscipit, accusantium ut facilis sequi totam a doloremque cupiditate?
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis repudiandae odit ipsam soluta
+                        nam consequuntur! Nemo molestias laborum expedita dicta dolorem, suscipit, accusantium ut
+                        facilis sequi totam a doloremque cupiditate?
                     </p>
                 </div>
             </article>
 
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./assets/images/avatar2.jpg" alt="">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Ernest Achiever</h5>
+                    <small>Web Developer</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis repudiandae odit ipsam soluta
+                        nam consequuntur! Nemo molestias laborum expedita dicta dolorem, suscipit, accusantium ut
+                        facilis sequi totam a doloremque cupiditate?
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./assets/images/avatar3.jpg" alt="">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Edem Quis</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis repudiandae odit ipsam soluta
+                        nam consequuntur! Nemo molestias laborum expedita dicta dolorem, suscipit, accusantium ut
+                        facilis sequi totam a doloremque cupiditate?
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./assets/images/avatar4.jpg" alt="">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Hajia Bintu</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis repudiandae odit ipsam soluta
+                        nam consequuntur! Nemo molestias laborum expedita dicta dolorem, suscipit, accusantium ut
+                        facilis sequi totam a doloremque cupiditate?
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./assets/images/avatar5.jpg" alt="">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Jane Doe</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis repudiandae odit ipsam soluta
+                        nam consequuntur! Nemo molestias laborum expedita dicta dolorem, suscipit, accusantium ut
+                        facilis sequi totam a doloremque cupiditate?
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./assets/images/avatar1.jpg" alt="">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Diana Ayi</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis repudiandae odit ipsam soluta
+                        nam consequuntur! Nemo molestias laborum expedita dicta dolorem, suscipit, accusantium ut
+                        facilis sequi totam a doloremque cupiditate?
+                    </p>
+                </div>
+            </article>
+
+
+            <div class="swiper-pagination"></div>
         </div>
     </section>
 
@@ -190,7 +285,9 @@
     <footer class="footer">
         <div class="container footer__container">
             <div class="footer__1">
-                <a href="index.html" class="footer__logo"><h4>EGATOR</h4></a>
+                <a href="index.html" class="footer__logo">
+                    <h4>EGATOR</h4>
+                </a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi autem qui ad!</p>
             </div>
 
@@ -243,10 +340,23 @@
         </div>
     </footer>
 
-<!-- ====================  END OF FOOTER ====================== -->
+    <!-- ====================  END OF FOOTER ====================== -->
 
     <!-- Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+    </script>
+
 </body>
 
 </html>
