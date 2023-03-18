@@ -272,3 +272,67 @@ function displayIndexCourse(course){
     display = display.join('')
     IndexSection.innerHTML = display
 }
+
+
+/* ================= TESTIMONIALS ===================== */
+const testimonials = [
+    {
+    id: 1,
+    name: "Diana Ayi",
+    title: "Student",
+    img: "./assets/images/avatar1.jpg",
+    },
+    {
+    id: 2,
+    name: "Ernest Achiever",
+    title: "Web Developer",
+    img: "./assets/images/avatar2.jpg",
+    },
+    {
+    id: 3,
+    name: "Edem Quis",
+    title: "Student",
+    img: "./assets/images/avatar3.jpg",
+    },
+    {
+    id: 4,
+    name: "Hajia Bintu",
+    title: "Instructor",
+    img: "./assets/images/avatar4.jpg",
+    },
+    {
+    id: 5,
+    name: "Jane Doe",
+    title: "Student",
+    img: "./assets/images/avatar5.jpg",
+    },
+]
+
+const testimonialSection = document.querySelector(".testinomials__container")
+console.log(testimonialSection)
+window.addEventListener('DOMContentLoaded',function(){
+    displayTestimonial(testimonials)
+})
+
+function displayTestimonial(testimonials){
+    let display = testimonials.map(function(item){
+        return `<article class="testimonial ">
+        <div class="avatar">
+            <img src=${item.img} alt="">
+        </div>
+        <div class="testimonial__info">
+            <h5>${item.name}</h5>
+            <small>${item.title}</small>
+        </div>
+        <div class="testimonial__body">
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis repudiandae odit ipsam soluta nam consequuntur! Nemo molestias laborum expedita dicta dolorem, suscipit, accusantium ut facilis sequi totam a doloremque cupiditate?
+            </p>
+        </div>
+    </article>`
+    })
+
+    display = display.join('')
+    testimonialSection.innerHTML = display
+}
+
