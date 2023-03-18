@@ -58,8 +58,8 @@ function displayTeam(team){
         </div>
         <div class="team__member-socials">
             <a href="http://instagram.com" target="_blank"> <i class="uil uil-instagram"></i></a>
-            <a href="http://twitter.com" target="_blank"> <i class="uil uli-twitter-alt"></i></a>
-            <a href="http://linkedin.com" target="_blank"> <i class="uil uli-linkdedin-alt"></i></a>
+            <a href="http://twitter.com" target="_blank"> <i class="uil uil-twitter"></i></a>
+            <a href="http://linkedin.com" target="_blank"> <i class="uil uil-linkedin"></i></a>
         </div>
        </article> `
     }).join('')
